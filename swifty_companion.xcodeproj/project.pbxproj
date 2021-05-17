@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECB6C32A264BD12600F92761 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = ECB6C329264BD12600F92761 /* SwiftKeychainWrapper */; };
+		ECB6C32D264EB74800F92761 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ECB6C32C264EB74800F92761 /* Alamofire */; };
+		ECBD82CA2637FB3000EA6824 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD82C92637FB3000EA6824 /* SearchViewController.swift */; };
+		ECBD82CF26380E7B00EA6824 /* RequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD82CE26380E7B00EA6824 /* RequestApi.swift */; };
+		ECD385F8263AE57C00DC8E59 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD385F7263AE57C00DC8E59 /* Student.swift */; };
+		ECD385FA26416FFB00DC8E59 /* 42-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD385F926416FFB00DC8E59 /* 42-Info.plist */; };
+		ECD385FC264173E800DC8E59 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD385FB264173E800DC8E59 /* ApiKey.swift */; };
 		ECE412672628362300D09C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE412662628362300D09C2C /* AppDelegate.swift */; };
 		ECE412692628362300D09C2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE412682628362300D09C2C /* SceneDelegate.swift */; };
-		ECE4126B2628362300D09C2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE4126A2628362300D09C2C /* ViewController.swift */; };
 		ECE4126E2628362300D09C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE4126C2628362300D09C2C /* Main.storyboard */; };
 		ECE412702628362300D09C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECE4126F2628362300D09C2C /* Assets.xcassets */; };
 		ECE412732628362300D09C2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE412712628362300D09C2C /* LaunchScreen.storyboard */; };
@@ -35,10 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ECBD82C92637FB3000EA6824 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		ECBD82CE26380E7B00EA6824 /* RequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
+		ECD385F7263AE57C00DC8E59 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		ECD385F926416FFB00DC8E59 /* 42-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "42-Info.plist"; sourceTree = "<group>"; };
+		ECD385FB264173E800DC8E59 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		ECE412632628362300D09C2C /* swifty_companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swifty_companion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE412662628362300D09C2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECE412682628362300D09C2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECE4126A2628362300D09C2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECE4126D2628362300D09C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECE4126F2628362300D09C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECE412722628362300D09C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB6C32A264BD12600F92761 /* SwiftKeychainWrapper in Frameworks */,
+				ECB6C32D264EB74800F92761 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC4D81942632EA8100F64DBA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD82CE26380E7B00EA6824 /* RequestApi.swift */,
+				ECD385F7263AE57C00DC8E59 /* Student.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		EC4D81952632EA9700F64DBA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ECE4126C2628362300D09C2C /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EC4D81962632EAA300F64DBA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD82C92637FB3000EA6824 /* SearchViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EC4D81972632EB0F00F64DBA /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				ECE412662628362300D09C2C /* AppDelegate.swift */,
+				ECE412682628362300D09C2C /* SceneDelegate.swift */,
+				ECE4126F2628362300D09C2C /* Assets.xcassets */,
+				ECE412712628362300D09C2C /* LaunchScreen.storyboard */,
+				ECE412742628362300D09C2C /* Info.plist */,
+				ECD385F926416FFB00DC8E59 /* 42-Info.plist */,
+				ECD385FB264173E800DC8E59 /* ApiKey.swift */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
 		ECE4125A2628362300D09C2C = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +150,10 @@
 		ECE412652628362300D09C2C /* swifty_companion */ = {
 			isa = PBXGroup;
 			children = (
-				ECE412662628362300D09C2C /* AppDelegate.swift */,
-				ECE412682628362300D09C2C /* SceneDelegate.swift */,
-				ECE4126A2628362300D09C2C /* ViewController.swift */,
-				ECE4126C2628362300D09C2C /* Main.storyboard */,
-				ECE4126F2628362300D09C2C /* Assets.xcassets */,
-				ECE412712628362300D09C2C /* LaunchScreen.storyboard */,
-				ECE412742628362300D09C2C /* Info.plist */,
+				EC4D81972632EB0F00F64DBA /* supporting files */,
+				EC4D81962632EAA300F64DBA /* controller */,
+				EC4D81952632EA9700F64DBA /* view */,
+				EC4D81942632EA8100F64DBA /* model */,
 			);
 			path = swifty_companion;
 			sourceTree = "<group>";
@@ -144,6 +192,10 @@
 			dependencies = (
 			);
 			name = swifty_companion;
+			packageProductDependencies = (
+				ECB6C329264BD12600F92761 /* SwiftKeychainWrapper */,
+				ECB6C32C264EB74800F92761 /* Alamofire */,
+			);
 			productName = swifty_companion;
 			productReference = ECE412632628362300D09C2C /* swifty_companion.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +267,10 @@
 				Base,
 			);
 			mainGroup = ECE4125A2628362300D09C2C;
+			packageReferences = (
+				ECB6C328264BD12600F92761 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				ECB6C32B264EB74800F92761 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = ECE412642628362300D09C2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +289,7 @@
 			files = (
 				ECE412732628362300D09C2C /* LaunchScreen.storyboard in Resources */,
 				ECE412702628362300D09C2C /* Assets.xcassets in Resources */,
+				ECD385FA26416FFB00DC8E59 /* 42-Info.plist in Resources */,
 				ECE4126E2628362300D09C2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECE4126B2628362300D09C2C /* ViewController.swift in Sources */,
+				ECBD82CA2637FB3000EA6824 /* SearchViewController.swift in Sources */,
 				ECE412672628362300D09C2C /* AppDelegate.swift in Sources */,
+				ECBD82CF26380E7B00EA6824 /* RequestApi.swift in Sources */,
+				ECD385F8263AE57C00DC8E59 /* Student.swift in Sources */,
+				ECD385FC264173E800DC8E59 /* ApiKey.swift in Sources */,
 				ECE412692628362300D09C2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +498,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AP6L488KH6;
-				INFOPLIST_FILE = swifty_companion/Info.plist;
+				INFOPLIST_FILE = "swifty_companion/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AP6L488KH6;
-				INFOPLIST_FILE = swifty_companion/Info.plist;
+				INFOPLIST_FILE = "swifty_companion/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,6 +653,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECB6C328264BD12600F92761 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		ECB6C32B264EB74800F92761 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECB6C329264BD12600F92761 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB6C328264BD12600F92761 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		ECB6C32C264EB74800F92761 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB6C32B264EB74800F92761 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECE4125B2628362300D09C2C /* Project object */;
 }
