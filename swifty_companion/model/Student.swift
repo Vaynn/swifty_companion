@@ -9,7 +9,7 @@ import Foundation
 
 struct APIStudent:Codable{
     
-    let id:Int
+    let id:Int?
     let email:String?
     let login:String?
     let first_name:String?
@@ -60,7 +60,7 @@ struct Student{
     
 }
 struct Groups:Codable{
-    let id:Int
+    let id:Int?
     let name:String?
 }
 struct CursusUsers:Codable{
@@ -68,13 +68,13 @@ struct CursusUsers:Codable{
     let level:Double?
     let skills:[Skills]?
     let blackholed_at:String?
-    let id:Int
+    let id:Int?
     let begin_at:Date?
     let end_at:Date?
     let cursus_id:Int?
-    let has_coalition:Bool
-    let user:User
-    let cursus:Cursus
+    let has_coalition:Bool?
+    let user:User?
+    let cursus:Cursus?
 }
 struct Skills:Codable{
     let id:Int?
@@ -82,12 +82,12 @@ struct Skills:Codable{
     let level:Double?
 }
 struct User:Codable{
-    let id:Int
+    let id:Int?
     let login:String?
     let url:String?
 }
 struct Cursus:Codable{
-    let id:Int
+    let id:Int?
     let created_at:Date?
     let name:String?
     let slug:String?
@@ -113,96 +113,96 @@ struct ProjectUsers:Codable{
 }
 
 struct LanguagesUsers:Codable{
-    let id:Int
-    let language_id:Int
-    let user_id:Int
-    let position:Int
-    let created_at:Date
+    let id:Int?
+    let language_id:Int?
+    let user_id:Int?
+    let position:Int?
+    let created_at:Date?
 }
 
 struct Achievements:Codable{
-    let id:Int
-    let name:String
-    let description:String
+    let id:Int?
+    let name:String?
+    let description:String?
     let tier:String?
     let kind:String?
-    let visible:Bool
+    let visible:Bool?
     let image:String?
     let nbr_of_success:Int?
     let users_url:String?
 }
 
 struct CampusUsers:Codable{
-    let id:Int
-    let user_id:Int
-    let campus_id:Int
-    let is_primary:Bool
+    let id:Int?
+    let user_id:Int?
+    let campus_id:Int?
+    let is_primary:Bool?
 }
 
 struct TitlesUsers:Codable{
-    let id:Int
-    let user_id:Int
-    let title_id:Int
-    let selected:Bool
+    let id:Int?
+    let user_id:Int?
+    let title_id:Int?
+    let selected:Bool?
 }
 
 struct Partnerships:Codable{
-    let id:Int
+    let id:Int?
     let name:String?
     let slug:String?
-    let trier:Int
-    let url:String
+    let trier:Int?
+    let url:String?
     let partnerships_users_url:String?
 }
 
 struct Patroned:Codable{
-    let id:Int
-    let user_id:Int
-    let godfather_id:Int
-    let ongoing:Bool
+    let id:Int?
+    let user_id:Int?
+    let godfather_id:Int?
+    let ongoing:Bool?
     let created_at:String?
     let update_at:String?
 }
 
 struct ExpertisesUsers:Codable{
-    let id:Int
-    let expertise_id:Int
-    let intersted:Bool
-    let value:Int
-    let contact_me:Bool
-    let created_at:String
-    let user_id:Int
+    let id:Int?
+    let expertise_id:Int?
+    let intersted:Bool?
+    let value:Int?
+    let contact_me:Bool?
+    let created_at:String?
+    let user_id:Int?
 }
 
 struct Roles:Codable{
-    let id:Int
+    let id:Int?
     let name:String?
     let description:String?
 }
 
 struct Language:Codable{
-    let id:Int
-    let name:String
-    let identifier:String
+    let id:Int?
+    let name:String?
+    let identifier:String?
     let created_at:String?
     let updated_at:String?
 }
 
 struct Campus:Codable{
-    let id:Int
-    let name:String
-    let time_zone:String
-    let language:Language
-    let users_count:Int
+    let id:Int?
+    let name:String?
+    let time_zone:String?
+    let language:Language?
+    let users_count:Int?
     let vogsphere_id:Int?
-    let country:String
-    let address:String
-    let zip:String
-    let city:String
+    let country:String?
+    let address:String?
+    let zip:String?
+    let city:String?
     let website:String?
     let facebook:String?
     let twitter:String?
-    let active:Bool
+    let active:Bool?
     let email_extension:String?
-    let default_hidden_phone:Bool
+    let default_hidden_phone:Bool?
 }

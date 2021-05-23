@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC4CA26F26540D99003173D4 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA26E26540D99003173D4 /* StudentViewController.swift */; };
+		EC4CA2782657A03C003173D4 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA2772657A03C003173D4 /* SkillsViewController.swift */; };
+		EC4CA27A2657B042003173D4 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA2792657B042003173D4 /* SkillTableViewCell.swift */; };
+		EC4CA27C2657F1E7003173D4 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA27B2657F1E7003173D4 /* ProjectsViewController.swift */; };
+		EC4CA27E26591642003173D4 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA27D26591642003173D4 /* ProjectTableViewCell.swift */; };
 		ECB6C32A264BD12600F92761 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = ECB6C329264BD12600F92761 /* SwiftKeychainWrapper */; };
 		ECB6C32D264EB74800F92761 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ECB6C32C264EB74800F92761 /* Alamofire */; };
+		ECB6C32F2653B82600F92761 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6C32E2653B82600F92761 /* Extensions.swift */; };
 		ECBD82CA2637FB3000EA6824 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD82C92637FB3000EA6824 /* SearchViewController.swift */; };
 		ECBD82CF26380E7B00EA6824 /* RequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD82CE26380E7B00EA6824 /* RequestApi.swift */; };
 		ECD385F8263AE57C00DC8E59 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD385F7263AE57C00DC8E59 /* Student.swift */; };
@@ -40,7 +46,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EC4CA2762656D7E3003173D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EC4CA26E26540D99003173D4 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		EC4CA2772657A03C003173D4 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		EC4CA2792657B042003173D4 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
+		EC4CA27B2657F1E7003173D4 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		EC4CA27D26591642003173D4 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		ECB6C32E2653B82600F92761 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECBD82C92637FB3000EA6824 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ECBD82CE26380E7B00EA6824 /* RequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
 		ECD385F7263AE57C00DC8E59 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -93,6 +118,8 @@
 			children = (
 				ECBD82CE26380E7B00EA6824 /* RequestApi.swift */,
 				ECD385F7263AE57C00DC8E59 /* Student.swift */,
+				EC4CA2792657B042003173D4 /* SkillTableViewCell.swift */,
+				EC4CA27D26591642003173D4 /* ProjectTableViewCell.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -109,6 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				ECBD82C92637FB3000EA6824 /* SearchViewController.swift */,
+				EC4CA26E26540D99003173D4 /* StudentViewController.swift */,
+				EC4CA2772657A03C003173D4 /* SkillsViewController.swift */,
+				EC4CA27B2657F1E7003173D4 /* ProjectsViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -123,6 +153,7 @@
 				ECE412742628362300D09C2C /* Info.plist */,
 				ECD385F926416FFB00DC8E59 /* 42-Info.plist */,
 				ECD385FB264173E800DC8E59 /* ApiKey.swift */,
+				ECB6C32E2653B82600F92761 /* Extensions.swift */,
 			);
 			path = "supporting files";
 			sourceTree = "<group>";
@@ -186,6 +217,7 @@
 				ECE4125F2628362300D09C2C /* Sources */,
 				ECE412602628362300D09C2C /* Frameworks */,
 				ECE412612628362300D09C2C /* Resources */,
+				EC4CA2762656D7E3003173D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,11 +348,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECBD82CA2637FB3000EA6824 /* SearchViewController.swift in Sources */,
+				EC4CA27A2657B042003173D4 /* SkillTableViewCell.swift in Sources */,
+				EC4CA27C2657F1E7003173D4 /* ProjectsViewController.swift in Sources */,
 				ECE412672628362300D09C2C /* AppDelegate.swift in Sources */,
 				ECBD82CF26380E7B00EA6824 /* RequestApi.swift in Sources */,
 				ECD385F8263AE57C00DC8E59 /* Student.swift in Sources */,
+				EC4CA2782657A03C003173D4 /* SkillsViewController.swift in Sources */,
+				EC4CA27E26591642003173D4 /* ProjectTableViewCell.swift in Sources */,
+				EC4CA26F26540D99003173D4 /* StudentViewController.swift in Sources */,
 				ECD385FC264173E800DC8E59 /* ApiKey.swift in Sources */,
 				ECE412692628362300D09C2C /* SceneDelegate.swift in Sources */,
+				ECB6C32F2653B82600F92761 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

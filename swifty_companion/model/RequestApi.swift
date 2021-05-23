@@ -63,12 +63,10 @@ class RequestApi{
             response in
             switch response.result{
             case .success(let data):
-                print("Validation Successful")
                 let token:String? = data.access_token
                 let _:Bool = KeychainWrapper.standard.set(token ?? "", forKey: "token")
                 callback(true)
-            case let .failure(error):
-                print(error)
+            case .failure(_):
                 callback(false)
             }
         }
@@ -93,13 +91,11 @@ class RequestApi{
             switch response.result{
             case .success(let data):
                 if (data.expires_in_seconds > 0){
-                    print(true)
                 callback(true)
                 } else {
                     callback(false)
                 }
-            case let .failure(error):
-                print(error)
+            case .failure(_):
                 callback(false)
             }
             
@@ -109,10 +105,9 @@ class RequestApi{
     // MARK: - Requests API search students
     static let apiStudent = "https://api.intra.42.fr/v2/users/"
     
-    static func getStudent(callback: @escaping (Bool, Student?) -> Void) {
-        let studentUrl = URL(string: apiStudent + "yvmartor")!
+    static func getStudent(name: String, callback: @escaping (Bool, Student?) -> Void) {
+        let studentUrl = URL(string: apiStudent + name)!
         getAvailableHeader{(success, headers) in
-            print(headers)
             let header:HTTPHeaders = ["Authorization" : headers!]
             let decoder = JSONDecoder()
             let dateFormatter = DateFormatter()
@@ -124,8 +119,7 @@ class RequestApi{
                 case .success(let data):
                     let student:Student = data.toAppModel()
                     callback(true, student)
-                case let .failure(error):
-                    print(error)
+                case .failure(_):
                     callback(false, nil)
                 }
                 
@@ -140,10 +134,8 @@ class RequestApi{
     static func getAvailableHeader(callback: @escaping (Bool, String?) -> Void){
         var token:String?
         if let header = getToken() {
-            print(header)
             tokenIsAvailable(header: header){(success) in
                 if (success){
-                    print(header)
                     token = header
                     callback(true, token)
                 } else {
@@ -161,8 +153,6 @@ class RequestApi{
                 callback(true, token)
             }
         }
-        print("toto")
-    
     }
     
 }
