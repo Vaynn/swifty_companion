@@ -8,3 +8,9 @@
 <img src="projects.png" alt="projects" width="200"/>
 <img src="skills.png" alt="skills" width="200"/>
 </p>
+
+### Stack
+
+*  Swift 5
+* Alamofire 5.4
+* Swift Keychain Wrapper 4.0
