@@ -1,6 +1,6 @@
 # Swifty Companion
 
-``Ce projet à pour mais de vous initier au développement d'application mobile. Il s'agit de réaliser, une application qui permet de récupérer les informations des élèves de 42, en utilisant l'API de l'intranet de 42.``
+``Ce projet a pour but de vous initier au développement d'application mobile. Il s'agit de réaliser, une application qui permet de récupérer les informations des élèves de 42, en utilisant l’API de l'intranet de 42.``
 
 <p float="left">
 <img src="student_research.png" alt="drawing" width="200"/>
