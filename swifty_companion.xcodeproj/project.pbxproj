@@ -163,6 +163,7 @@
 		ECE4125A2628362300D09C2C = {
 			isa = PBXGroup;
 			children = (
+				ECAE74882693449D00539E82 /* Readme.md */,
 				ECE412652628362300D09C2C /* swifty_companion */,
 				ECE4127C2628362400D09C2C /* swifty_companionTests */,
 				ECE412872628362400D09C2C /* swifty_companionUITests */,
@@ -187,7 +188,6 @@
 				EC4D81962632EAA300F64DBA /* controller */,
 				EC4D81952632EA9700F64DBA /* view */,
 				EC4D81942632EA8100F64DBA /* model */,
-				ECAE74882693449D00539E82 /* Readme.md */,
 			);
 			path = swifty_companion;
 			sourceTree = "<group>";
