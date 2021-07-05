@@ -13,6 +13,10 @@
 		EC4CA27C2657F1E7003173D4 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA27B2657F1E7003173D4 /* ProjectsViewController.swift */; };
 		EC4CA27E26591642003173D4 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA27D26591642003173D4 /* ProjectTableViewCell.swift */; };
 		ECAE74892693449D00539E82 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = ECAE74882693449D00539E82 /* Readme.md */; };
+		ECAE748E26934E2D00539E82 /* profil.png in Resources */ = {isa = PBXBuildFile; fileRef = ECAE748A26934E2C00539E82 /* profil.png */; };
+		ECAE748F26934E2D00539E82 /* student_research.png in Resources */ = {isa = PBXBuildFile; fileRef = ECAE748B26934E2C00539E82 /* student_research.png */; };
+		ECAE749026934E2D00539E82 /* skills.png in Resources */ = {isa = PBXBuildFile; fileRef = ECAE748C26934E2D00539E82 /* skills.png */; };
+		ECAE749126934E2D00539E82 /* projects.png in Resources */ = {isa = PBXBuildFile; fileRef = ECAE748D26934E2D00539E82 /* projects.png */; };
 		ECB6C32A264BD12600F92761 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = ECB6C329264BD12600F92761 /* SwiftKeychainWrapper */; };
 		ECB6C32D264EB74800F92761 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ECB6C32C264EB74800F92761 /* Alamofire */; };
 		ECB6C32F2653B82600F92761 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6C32E2653B82600F92761 /* Extensions.swift */; };
@@ -67,6 +71,10 @@
 		EC4CA27B2657F1E7003173D4 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		EC4CA27D26591642003173D4 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		ECAE74882693449D00539E82 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		ECAE748A26934E2C00539E82 /* profil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profil.png; sourceTree = "<group>"; };
+		ECAE748B26934E2C00539E82 /* student_research.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = student_research.png; sourceTree = "<group>"; };
+		ECAE748C26934E2D00539E82 /* skills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skills.png; sourceTree = "<group>"; };
+		ECAE748D26934E2D00539E82 /* projects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projects.png; sourceTree = "<group>"; };
 		ECB6C32E2653B82600F92761 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECBD82C92637FB3000EA6824 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ECBD82CE26380E7B00EA6824 /* RequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
@@ -164,6 +172,10 @@
 			isa = PBXGroup;
 			children = (
 				ECAE74882693449D00539E82 /* Readme.md */,
+				ECAE748A26934E2C00539E82 /* profil.png */,
+				ECAE748D26934E2D00539E82 /* projects.png */,
+				ECAE748C26934E2D00539E82 /* skills.png */,
+				ECAE748B26934E2C00539E82 /* student_research.png */,
 				ECE412652628362300D09C2C /* swifty_companion */,
 				ECE4127C2628362400D09C2C /* swifty_companionTests */,
 				ECE412872628362400D09C2C /* swifty_companionUITests */,
@@ -322,11 +334,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECAE749126934E2D00539E82 /* projects.png in Resources */,
 				ECAE74892693449D00539E82 /* Readme.md in Resources */,
 				ECE412732628362300D09C2C /* LaunchScreen.storyboard in Resources */,
 				ECE412702628362300D09C2C /* Assets.xcassets in Resources */,
+				ECAE748E26934E2D00539E82 /* profil.png in Resources */,
 				ECD385FA26416FFB00DC8E59 /* 42-Info.plist in Resources */,
 				ECE4126E2628362300D09C2C /* Main.storyboard in Resources */,
+				ECAE748F26934E2D00539E82 /* student_research.png in Resources */,
+				ECAE749026934E2D00539E82 /* skills.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
