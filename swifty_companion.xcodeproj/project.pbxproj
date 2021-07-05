@@ -12,7 +12,7 @@
 		EC4CA27A2657B042003173D4 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA2792657B042003173D4 /* SkillTableViewCell.swift */; };
 		EC4CA27C2657F1E7003173D4 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA27B2657F1E7003173D4 /* ProjectsViewController.swift */; };
 		EC4CA27E26591642003173D4 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CA27D26591642003173D4 /* ProjectTableViewCell.swift */; };
-		ECAE748726933E3600539E82 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ECAE748626933E3600539E82 /* README.md */; };
+		ECAE74892693449D00539E82 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = ECAE74882693449D00539E82 /* Readme.md */; };
 		ECB6C32A264BD12600F92761 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = ECB6C329264BD12600F92761 /* SwiftKeychainWrapper */; };
 		ECB6C32D264EB74800F92761 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ECB6C32C264EB74800F92761 /* Alamofire */; };
 		ECB6C32F2653B82600F92761 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6C32E2653B82600F92761 /* Extensions.swift */; };
@@ -66,7 +66,7 @@
 		EC4CA2792657B042003173D4 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
 		EC4CA27B2657F1E7003173D4 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		EC4CA27D26591642003173D4 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
-		ECAE748626933E3600539E82 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ECAE74882693449D00539E82 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		ECB6C32E2653B82600F92761 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ECBD82C92637FB3000EA6824 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ECBD82CE26380E7B00EA6824 /* RequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 				EC4D81962632EAA300F64DBA /* controller */,
 				EC4D81952632EA9700F64DBA /* view */,
 				EC4D81942632EA8100F64DBA /* model */,
-				ECAE748626933E3600539E82 /* README.md */,
+				ECAE74882693449D00539E82 /* Readme.md */,
 			);
 			path = swifty_companion;
 			sourceTree = "<group>";
@@ -322,9 +322,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECAE74892693449D00539E82 /* Readme.md in Resources */,
 				ECE412732628362300D09C2C /* LaunchScreen.storyboard in Resources */,
 				ECE412702628362300D09C2C /* Assets.xcassets in Resources */,
-				ECAE748726933E3600539E82 /* README.md in Resources */,
 				ECD385FA26416FFB00DC8E59 /* 42-Info.plist in Resources */,
 				ECE4126E2628362300D09C2C /* Main.storyboard in Resources */,
 			);
